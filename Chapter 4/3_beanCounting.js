@@ -1,10 +1,5 @@
 function countBs(string) {
-	var count = 0;
-	for (var charPos = 0, len = string.length; charPos < len; charPos++) {
-		if (string[charPos] == 'B')
-			count++;
-	}
-	return count;
+	return countChar(string, 'B');
 }
 
 function countChar(string, char) {
@@ -15,6 +10,7 @@ function countChar(string, char) {
 	}
 	return count;
 }
+
 
 console.log(countBs("BBC"));
 // → 2
